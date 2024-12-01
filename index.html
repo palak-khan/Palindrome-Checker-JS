@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      class="container flex flex-col items-center justify-center w-full h-full gap-3"
+      style="background-color: #87bdd8"
+    >
+      <h1 class="title text-4xl">Palindrome Checker</h1>
+      <h2 class="text-2xl">Is it a Palindrome?</h2>
+
+      <div class="input-box bg-rose-600 p-6 rounded text-white">
+        <label for="text-input" class="mb-2"
+          >Enter text to check for a palindrome:</label
+        ><br />
+        <input
+          type="text"
+          id="text-input"
+          class="text-black border-none rounded bg-yellow-50 py-1 px-2"
+        />
+        <button type="submit" id="check-btn">Check</button>
+      </div>
+      <div class="result-box">
+        <!-- The result will be displayed here -->
+        <span><p id="result"></p></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
